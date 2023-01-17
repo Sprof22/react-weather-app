@@ -2,3 +2,9 @@
   max-width: 1080px;
   margin: 20px auto;
 }
+
+body {
+  background: url('../public//weather-background.jpeg');
+  background-position: 0 0;
+    background-size: cover;
+ }
