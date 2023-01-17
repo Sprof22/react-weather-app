@@ -9,18 +9,18 @@ import {
 const Forecast = ({ data }) => {
   return (
     <>
-      <label htmlFor="" className="title">Daily</label>
+      <label   className="title">Daily</label>
       <Accordion allowZeroExpanded>
-        {data.list.splice(0, 7).map((item, idx) => {
-          <AccordionItem key={idx}>
+        {data.list.splice(0,7).map((item, idx) => (
+         <AccordionItem>
             <AccordionItemHeading>
                 <AccordionItemButton>
-                hi
+                    Hello
                 </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel></AccordionItemPanel>
-          </AccordionItem>;
-        })}
+         </AccordionItem>
+        ))}
       </Accordion>
     </>
   );
